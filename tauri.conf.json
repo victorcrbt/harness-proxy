@@ -1,0 +1,21 @@
+{
+  "productName": "Harness Proxy",
+  "version": "1.0.0",
+  "identifier": "com.harness.proxy",
+  "build": {
+    "beforeDevCommand": "yarn --cwd frontend dev",
+    "beforeBuildCommand": "yarn --cwd frontend build",
+    "devUrl": "http://127.0.0.1:3528",
+    "frontendDist": "frontend/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Harness Management Console",
+        "width": 900,
+        "height": 600,
+        "resizable": true
+      }
+    ]
+  }
+}
